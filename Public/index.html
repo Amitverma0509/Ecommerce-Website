@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website With Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <!-- nav  -->
+        <div class="nav container">
+            <!-- logo -->
+            <a href="#" class="logo">Ecommerce</a>
+            <!-- cart Icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="card-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+                <!-- Buy Button -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- Close Cart -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Products -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- shop content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4tN3UmEzCFuEl7E6hDaGsobnz3-4Onnoj3qykkjuBg113GmJ49xqUQuaspXgs6BUZdCdofAvfj2pEM5hvlxaR-RZBH5O2ymbJGcB2yWdoYrfUvhnr8X0ahTOgiIGqC9P7C6_6PY843IvYXQxEalBIEF1jxVMfKlX_SUV8LhWDPZQq6-eMOYydo29pXto/s320/white1.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Vivo V23 Pro 5G</h2>
+                <span class="price"><sup>₹</sup>27215</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihyphenhyphen8ZK2xjZ2Hkos7s-0V9wXPNxyBNhjKAoIUcD8AINgywo8NCkp8BUzN9Sq2nYvwD9VO8rI63rEnX91SUNhrMpDh6vjGvrYySXc874CE9VrI3K5BoCAo1edha4lMSESP1Bsh1c1-DczWsQyb77oyjAXCohrCx-i5jfpaGFLZewfOuMkduWXkxdXzoHfI8/s320/white%203.jpeg" alt=""/>
+                <h2 class="product-title">OnePlus 10 Pro 5G</h2>
+                <span class="price"><sup>₹</sup>52999</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzvK3rdS03XaY4BMvsxbYGW_tTmsHyN1QBhm5TmZ8PMEtZrjfL13nyQIKgqyWLW-iY_ETswc_VEl2WAC1drOejXOVkyD99N9OKJH5AH91YB0TELPYhxdiPyiuxWAM96vCw5D9TxVVNU4Eys_Y_U8A3gAlbb6OvrJ35Yvb3lKV7BGktsHT6dEDue8ZZ30A/s320/Oneplus-N10-Mobile-Phone-4.jpg" alt=""/>
+                <h2 class="product-title">OnePlus Nord N10 5G</h2>
+                <span class="price"><sup>₹</sup>28790</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNN68pI5jjOk9IHDBScI542qQ-KD-v1c0rP8nInvH81-WYhxDqDbEIcU5iwbIfYhvbomC2bn6Yi8XwnXNo39sjpnl7BxpVIyqxRbeK4BYWDK_NPm20PTwJqfq99b3Yrh6G3WBbxedTqS7WYgbC26DrM8ryFpzGtWWrpFI2XVOiLQcu6vvo-TNPdYd-NcA/s320/white%204.webp" alt=""/>
+                <h2 class="product-title">Samsung Galaxy S22 Ultra 5G</h2>
+                <span class="price"><sup>₹</sup>82900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt922U1w39L12ZbZXPMyXWC9hqAyrw20l_e2P83qlJXdfAeHZHUJSx3puEZ3Hfu4-FrO7npozkAMy-zsW3paQnQVeCX3YIJpI3NQJUFuiHjnMuedanVulRJoWCPs1oya89B5Ns7TDsUWcQ5XcY6LoKfNM_-o9a_K92Iu2hHhjCPsSCUIzRao8RqX0wAfc/s320/OIP%20(3).jpeg" alt=""/>
+                <h2 class="product-title">Galaxy Z Fold 4</h2>
+                <span class="price"><sup>₹</sup>139999</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div><!-- Box 6 -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhABOOWseb0e1V64csC-P_SM4VvY9Ak7-jI9zTkCCehQ8eDiCpsiEaNZiDeTOPWVL8uqcGt454OY0H-dEMwmZH4HUyIVN0dRBgXmQCSR5RSw1ocNBwQiEbEjWynn9wlwTdM4K0tIjgTuLEzdL4w6cao8CAuLbltqV3RooB5WhQsrP1dvwDSWuba5O4-sNo/s1600/OIP%20(2).jpeg" alt=""/>
+                <h2 class="product-title">Samsung Galaxy J8</h2>
+                <span class="price"><sup>₹</sup>18999</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div><!-- Box 7 -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqr3sQFuXSuU4UrFQpeWavcQagnkPu2jNWynGoMwnsM46TZT8-G4SlaVehHP1MymSfYOOS1BzzagicNnXz7r8oHHI2BfmmLDGU0N7fTuPZRiBskCEOsv9bf8wHXpT5ufXm1Byt6XbC6o1PR4J6uqsHumKnR9CtSRCNGBa4qloephwQr7butAtjUzcRLy8/s320/OIP%20(1).jpeg" class="images-product" alt="">
+                <h2 class="product-title">Motorola One Power</h2>
+                <span class="price"><sup>₹</sup>18999</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div><!-- Box 8 -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgocQMH8OXH0eI6mwcF91Y8SAcy8YJ5PXiueOFVVh28JycMw6of1edR7IPRc0_GT-wCTma3JKv4dEuLA5eDUfBdYAaZZzuJK6dH94sLm4adrlyI8wzGrGXvfqenCq0G-r3ISaeZEB7w3UBMtaHbtvLV_1GBYPkL-3TjN3Iab1EtgjDnZ4DWoX9g1HqaJWE/s320/white%205.jpeg" alt=""/>
+                <h2 class="product-title">Iphone 15</h2>
+                <span class="price"><sup>₹</sup>79900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwQlpuhScJRaYSHAd50LjKNAK8usbQNgJho8z_LQUFpD0nsUGwhPo5_hEJ4f0uAL3aazMBUdj-v1P4nfib7TAEv65KeYdTPh9N5jCPYXKr2hEqL-jzrkKn4zP-nKwpQ-WUKQXSshg_zFoOjhSZkw14kHY6Hl5CE-OTa2c2Uu2IvajygVJZfKhQPKRWZ_8/s320/image1.jpg" alt=""/>
+                <h2 class="product-title">OnePlus Nord CE 3 Lite 5G</h2>
+                <span class="price"><sup>₹</sup>19999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhFLc2VwqZDkT_12IV1-ywLY3UkXRTesB9DonnWPDzJ8O4WAUKOTimCDTkN5Mo1PzY1h34C6JH-j_MoLYroMBxSpKkbYTjhr9Zr5f_YswrYQaLDlEXmAehwnRTCIf75LqGQJfA86R8eVCRZtDhJwuz-293oNdZNuwmmoOHkjHhGEPf5bN_hyphenhypheny5dQB17Uw/s320/image3.jpg" alt=""/>
+                <h2 class="product-title">realme narzo 60 5G</h2>
+                <span class="price"><sup>₹</sup>21999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBZkn28NoRm6SI3Jzd7mIpXc4UBCEjn9eYG8xfdAgK9Z5eH0_0crVK7IPmpvuL2_UrWzL9OQ-5jWjix9QDsFR023TgHM3toZxZ6yiwhmJtvErJdOrNmzIpfx8fnlq-HhMT3obEUgKftBkNL3HuzsGoDsJeJlWCfhtiHGkH32yhfjYiJxybMgdb15vEaAo/s320/image4.jpg" alt=""/>
+                <h2 class="product-title">Redmi 12C</h2>
+                <span class="price"><sup>₹</sup>6799</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDoTniBlZ-DTr40QWyknWHSe2iCdC8LDx6nmWgeyCVkgo8VFdtQKd9VOZxBhj64vyGeN6LJ0cl4-7mUd5nU6UYsIjhyphenhyphen7mkkjqhy8Q5wDqH5phjAbn5mpwTVFUNNBQqgZUFe6NAXbW-p3QYa04o4Gm5tbDVgPqt-DfWXcNgZsf964acVrn6NmtUaveRKRs/s320/image5.jpg" alt=""/>
+                <h2 class="product-title">realme narzo N53</h2>
+                <span class="price"><sup>₹</sup>7999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI5lgQe4sL3uZgAfw3mcTxxckUCOdT5R9ij46oNpe5CNoZ84J86NioSvhGhmZUopvVo5Vh0TZ6f8wJQFgOlqb1jGFvDjZQDykeB8zCcix3xsZKqXzbZoZUoWtEd0whk3lLByKwI39vlz2Zs4nAuTQ-a6NzPabe7Q_VXdoxpaOHy7sp1nG2AsduBlPvKhE/s320/image6.jpg" alt=""/>
+                <h2 class="product-title">Redmi 12 5G</h2>
+                <span class="price"><sup>₹</sup>11999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGyodorT1zSy4YgQd7CVg1Cg30VqrAHeGkLdZrpVcoANg7sPDZnLljFbikCj-Z8kYIv8VDgpOiVNED4_HplwixLZAf4JQfPzCjmH3Qs9l-JAWP1RiWqBpSL_LZpEbMU-98uI2vdDagkKvD-hxYJ9lbEk-LIzxr2QpUE9YATF6z7IyNzK5nQYs57XfUDuA/s320/image7.jpg" alt=""/>
+                <h2 class="product-title">realme narzo 60 5G</h2>
+                <span class="price"><sup>₹</sup>17999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBlFHbsSnBv-fNPk4j_c-2sKudRu8PTZvNa8Dyc4CFOhyphenhyphenjUgRoyV-1Pyj-52bcRQEgm9xxhYoqm8bpairds2xWWaqDquKNFwxmR0jBoRUud8HK_MlY9B68Y-7-x8Um5R9xcmsFzoOcHO1j1oQ-z3dVAUz8CKvxMj78MkaIzFvHMSTifb-vxVU-hhlX2-8/s320/image8.jpg" alt=""/>
+                <h2 class="product-title">Oneplus Nord CE 3 5G</h2>
+                <span class="price"><sup>₹</sup>26999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVrHkss3yhBRSWwm5_G-H21cnM9V7_y4YSrafEZ_x4kvI-r3uxCwjltsXGKUkTpc0YmtVygEPcfjQXyAFeFWVSUpebe5tCN-897WgYKxlSevs-yG3bwmmZAEaquLbijabITKhxL47s1qe0mYKuluAhooOBkeEzZXg6QH_QEH9s1ZNboDwrOJwefbaSIHU/s320/aa.jpg" alt=""/>
+                <h2 class="product-title">HONOR 90</h2>
+                <span class="price"><sup>₹</sup>33999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNnzLR5amoUX2TMjwFV5USvg1m55mIOG0_DtEaKCQTP35P0Qf-5kXKONRbICsMlH4ZcuwmCbZ8zSpJytthBxKyyDGCendRmahNAxSakWPTyQfELvZXGHy7yLukE_rE5FvEuhidHdYU2yXEl4VNh4Pac_3nX8oLaEI9BqjLFGoK08P5ObZS8GmR25xHAeo/s320/image9.jpg" alt=""/>
+                <h2 class="product-title">OnePlus 11 5G</h2>
+                <span class="price"><sup>₹</sup>56999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAoelg1n3ZkwSvRtyjCspwEQnPe6rZQyvjqF4jUuhkb2Hmh1aMjCq84GYuAIyaVsKhDOU-0Re-BOIsdTzOf3VgkNClukyd6shfF_F6u5Olljv6cfiOsXRGn_8_-NoH4Zc6AghwgHpwkHm6FUhWvUflW_gP0lQdyRtri39ayqXYnMVl_W638Sw_L9qjk-0/s320/image10.jpg" alt=""/>
+                <h2 class="product-title">Apple Iphone </h2>
+                <span class="price"><sup>₹</sup>77990</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFRzFLwfnTDCr6wAeDxOJNYvqplb4vWh5B0ixdMjSA3hwST32SWVfiIPF3YW4A95p8ZTR3_ToYBe8zVcICp8vDmp0RUK39_5OIOWgvqLc-apuhQ0vdyER-vXcsnaBX2_TlofV65BydtWHWVTPkry8S_Y1BnZMNFBsJ5PElNd0W3TYNT86G64EwyYzBZCc/s1500/image11.jpg" alt=""/>
+                <h2 class="product-title">Redmi A2</h2>
+                <span class="price"><sup>₹</sup>5299</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsGniVaDQsTAm98XP_YuNSS_xRyJ0XSaMzoB9t0wgEL9mSowbapmpnR2F9Hz4A1JdgcozQDT_LpTlkQbKo3AknktqV9Y2GksKq6g-FZvVtpRcOvl4rFJqvlo_7_JaQF5tp_kWjcS2v2PxyzPPAC_m96HZZ1Z72AXiaKYi8yviulbL_wRoDJwmpc3mXUsU/s320/image12.jpg" alt=""/>
+                <h2 class="product-title">SamSung Galaxy M34 5G</h2>
+                <span class="price"><sup>₹</sup>16548</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGQm_DnHUzvZC3mUtHNxMGnQcqbVAQX2lXtZpuRq0hZr9r3hWI5-NlmQJmb3T4rFEpnjLgP7qXNK1oxMjh2Qu2U2U0EbNMZFeEDdul48GTFWr8wHWJl_fI5siFmR_GAFCwj4b5mTSAC3uRKPlTLI3IDHEwRVzei184l6OulqoN7hChdowteIinj2DVPls/s320/image13.jpg" alt=""/>
+                <h2 class="product-title">TECHNO POVA 5 Pro 5G</h2>
+                <span class="price"><sup>₹</sup>14999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfbrXMTV_p_QKKnXaujTglmgTs7oQvdZ1szn67sgHNn50lsCrxHdA4qUp3bxobrsk3F3msCHWrE3iJyrq4E72Mpvfzpv2FdNn-_dtkjwKQlirCoes51iPqjJJ8QGu6T9f_doGdg-kS44ST30s2-S-yq75YhpapXr2V3YHoEY6aVRi8IRgRWhYQxBn34z4/s320/image14.jpg" alt=""/>
+                <h2 class="product-title">Samsung Galaxy M14 5G</h2>
+                <span class="price"><sup>₹</sup>12039</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglfoaHYDTStzI4WXJl7JMpdyBjnmzG1RQYGDAuf0pBE2rYI3SDSgu5CpjlhTge7vr9iAJCx0iE6GBHGaAX-_x7nkSppNBywKwxYwDDbxssE4ynC0otcig2E45WysEk4mrt0I6wkjA2YsnanXdj1Xb67TP7b9OgRVfIeBEEm16smoYZLnhInpPWWtbfywk/s320/image15.jpg" alt=""/>
+                <h2 class="product-title">iQOO Z7 Pro 5G</h2>
+                <span class="price"><sup>₹</sup>24999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhELGzy3wpt7erbnbtuqpMpUb2rmZjZ-EiWqNiBsYoLozCsxlcOnljJpraoVyv9SfLE7KhGhf8mSCdg1Rhb1OPNlJiw_LGpvOqLvNH4McQQD1qb03bh-Pt32bFL8JD8QKIitG3b3KXP_C5HIw4bYjmEJ4zbKI_scSBvwDuEDVOOlu_0n93UIYYvvFM_FZs/s320/image16.jpg" alt=""/>
+                <h2 class="product-title">OnePlus 11R 5G
+                    </h2>
+                <span class="price"><sup>₹</sup>39999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicdMlFdoE9mXaiFiPx-c9fZ4kopbRRgg9agWOqpc5DsLspNQSQfZ7fvuaZjvXkwck7AKtZ4WW4kSrt9bSzp9815jBT3G0D1y6gpyZhsFVxnbkUDLgmdHVhqHXhLFscs2Un76NmnjLgry1T07OjTtv3kJgSQMIbppWIxRDeuB-s-SbNx0bDZqelEvuu8Q8/s320/image17.jpg" alt=""/>
+                <h2 class="product-title">Lava Agni 2 5G</h2>
+                <span class="price"><sup>₹</sup>19999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4L4bZxM8pli2EhkGsANh6f2-zkSdYOJrQVvpLlP-uUhsh6EdLtpEqGiiKp6f6LM5By1KC4HeURyYfmzxAbDoSR4TSEO-tznXZhfEdIr9gHcdzXmInJePBhQY2FIn08Ly568-QgPh1K2_Xb4rAGL7_aTRn3Rj877tUquZu150UUx3Azd__s4O3vfV7_gA/s320/image18.jpg" alt=""/>
+                <h2 class="product-title">itel P55 5G</h2>
+                <span class="price"><sup>₹</sup>9999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9ZpaIm2c0XlLoF5wQ79xJyfImjA1-LKf0aRwl2r8hWjZcwa4LcwyGDqRgYvKbNTqr1XwUFUd4JTGJT_hvaHTTMvOgflZbstvlxuTFqNwwoPD-FNEIzogbDjI3975M5blABLufIOaYpuNwRacmGqMuW9lEDpeM0EjV8rNcm1q8YVy6H-ZIFsTP5xaGrM0/s320/image34.jpg" alt=""/>
+                <h2 class="product-title">Apple iPad Air M1 Chip</h2>
+                <span class="price"><sup>₹</sup>55999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk7WGf2dyt5kmN8kOTAoKTtMC6j1PK551wrviU-7y8o3GDJqniOPDMfSKJcKDfxWQhkDb7hn4FiBHyB21TdKVYsRcUX_kKrhujxiKegJzm9TSTwIWx4bgPfyCN71woCiKXdzlkdyeGtJkHA7LChlbLXTrnwuf9e1d9J6ZVC871JVneUtTb6OsymxGGezs/s320/image.jpg" alt=""/>
+                <h2 class="product-title">realme narzo N53</h2>
+                <span class="price"><sup>₹</sup>7999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoRp1L4b9WSzQfSpkX9Pt6uRogKrmoD-xHIQ9MU_3rzyMa9m9ohuYBROz-5mQBzkWekt-8H8Z_zDWiY5pEtkhmU89v0xXxvNkJUvsDUBp7qKIK3stdvMj75nQzjKGxyq-UnxTa-KlhvcSpOx94PtRk54i5zNw29Km-kU7Tdo4mEbBf9o6Inj_OCi5wkOM/s320/realmenarzo60x5g.jpg" alt=""/>
+                <h2 class="product-title">realme narzo 60x 5G</h2>
+                <span class="price"><sup>₹</sup>14999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrMUBv_S7IDxzGBKlFtz7njDUP0C76cw_4Q86Vi59lu57SVnzufKvUPwZjQMnEqyP93GMcQHvA7SrOabcAK6XKrVEUnEdhOL1sSDEe_NLc6vklXf4ooQg2Ubtaa11eMUYeHKWVLehkZxtDv5SQyqaW6Qih9Fr-jW_mwsAL1ZS2b3-tTB_vxhIESvTivco/s1600/image40.jpg" alt=""/>
+                <h2 class="product-title">IKALL Z3 5G</h2>
+                <span class="price"><sup>₹</sup>5680</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLb8_anqKouJse8z_Ayzs19CYt833FMjteod0n7Z0l0fY2reU_THQDj_uwV-RxayKZ5EKzynwCVre0xq9X6IZjPFB2qlGJo8qfQO54WMBsoQUhiG3pZ2n7XiuFS8gOWXj1T6W7_bf7C4CqOBiJaW4vFUeRumYCIwKTCl5LzQuAg-WX0rEGmt5gbX_9swk/s320/image45.jpg" alt=""/>
+                <h2 class="product-title">OPPO A78 5G</h2>
+                <span class="price"><sup>₹</sup>19999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZOtqAW6x1HHsl273l75K5jAKZXUG_5uEM_vHsDE09LycTRu8-PMXxg1dZ9aTXW4lje5q4y631YdePGSHhPPYQ2mMiMl6YDx2oSRTJBvZXi2od6KOIu2VM6knYDtm3Je3IndlORSr8jwGUCZOuR-nAJRkit8JoY99cyA7VXQF0Jsox8hO6b24kH6QFgqo/s320/image44.jpg" alt=""/>
+                <h2 class="product-title">Samsung Galaxy S23 FE</h2>
+                <span class="price"><sup>₹</sup>59999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5LgK_CMZ44C6rC2UG-3NAkFAEqLyOPHQzloXce6jmsFCqcpa_F7XxmZ4fvIu4zKnIlumCLTpkaaPTnSnNnFIiZIHCBIWb3PP52yNwkkOmK5uEFHpZ9o_UQFeUdsZsHC4SXyFRxjVYVHIU8vBkGmRrHGKaiebtvZ06HgdMaPaHD8u0GAQZeogKu23ohnw/s1600/image41.jpg" alt=""/>
+                <h2 class="product-title">POCO X4 PRO 5G</h2>
+                <span class="price"><sup>₹</sup>17280</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNA-md1UB9hV685mpwyP25R2RJfVXI4k1WtSWS6pjIfPVTD6eRI8IFVcnh92rxocnOYZEZTQVjcPm7lNcnJdWSP1387owGFohWBvYT3J7mVVG4fWxc_-6PV_QRs-UPGZTRwf3TuCJ7w1TmH6Yl2D0JE0LqJ5XijZHbAqQaLG1f0KASuK2Bq09JFiRUbZc/s1600/image39.jpg" alt=""/>
+                <h2 class="product-title">POCO M6 PRO 5G</h2>
+                <span class="price"><sup>₹</sup>11249</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaoVTId9etrZdo247lr1FEfSp1M1aksKPk8mnbJLkgUDeCmhzpHfdomnu0y9NF5QHidHTq4ZKeuTJvDjYF0CvNxHSgsVvnAwBzjmAMNoIPr2x8M3A7BvwRifdvdjxWdID0DRfR1LHGu-tvwJ4hkXVIX8wA14KBPCFg7NXK-HPkRgGlgoL6k_0LzHN-FJk/s320/image42.jpg" alt=""/>
+                <h2 class="product-title">POCO C55</h2>
+                <span class="price"><sup>₹</sup>9200</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7bMcihq3xmzbqToVAsPQdYTylCbCgfxMNgSjvHJeQtVIbgc5MBEplGVi45oY8mOyHIrdQO83r7s_Ul6KHrMyUbvE77o0UMXjVItzsom0nxVd-5Tm9OvH4_OUgIDRqG3huY16ShIhVxmocgsK9JW1r2X89u6opc8Jt6bCyU__c-gHSmWQweVv8T1Ov5io/s320/image43.jpg" alt=""/>
+                <h2 class="product-title">Lava Blaze 5G</h2>
+                <span class="price"><sup>₹</sup>11999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDgKW9Rc3shvKaKxgyLYNoLNGLBPac1cpnRsi4KtSirzbGJiJ43NFQDzDEuWREPkrqiZjcnSzR89dV1ieXbB-mMQKvFnVxdWXgmQq6isovm6EuFxATlTv5P742Mmxp6sHjL5yMPf0RS4K-bpuQ_NQZdgoSaF7PGyteihA64rlUCjSIuWmOBK1ckqZmP_Q/s320/image2.jpg" alt=""/>
+                <h2 class="product-title">Fire-Boltt Ninja</h2>
+                <span class="price"><sup>₹</sup>499</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihfXrps9-VfrAmdZ30kYvI6IC-7nQ7wgSwIxNungLlcYrtqpnnezL45-IV4SAhrs3H8_rdUi0t_f4yZWRObj7Lmzlsr2hKb75I27PHw7LBepQVFOMyHC4Qb23cbCG8W-eviTBEnfx5arIVWqGgL9uQTc4FXM2puMI2ZgX-CTxLqydwyTk9kdLPOm4BD1w/s1600/image48.jpg" alt=""/>
+                <h2 class="product-title">Fasttrack SmartWatch</h2>
+                <span class="price"><sup>₹</sup>1800</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7iFvG341QGmVSqFm3F1DSgrsovGMPk5ZB36T1HzE_V9CPB8TUxIzticq3nRjU72eSFLQ2GKws9lHpyFzoVGCGjzFAGmzLyrrHF4Rc5i2C9n00Zb2Gn4w8H9txwXnSALKzOOD2fwVkG00PScPeD6JZVBqcjXFVT1trT5JVuXqtDTD2_R_l0N-K1WH5YF8/s320/image29.jpg" alt=""/>
+                <h2 class="product-title">Noise Pulse 2 max</h2>
+                <span class="price"><sup>₹</sup>1499</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnSGU2Prh4XwpGpC1l26E5zdE26KY9ukzthKX2pjorrk7-vX8BHJM0FVvaTgUF8EokGlPWypkeo-s-Ad5UHA2OwDFrhpPiFoJyhq8VEktRRP6wacnNyNio5QCT6nOlvxUz9MTJJRsOma16RSuhxXXYkZ0Pl-3HqG42rGP0o5t-MmHeAHmyDoFLBUEuSQw/s1600/image30.jpg" alt=""/>
+                <h2 class="product-title">Fire-Boltt Ninja 3 Plus</h2>
+                <span class="price"><sup>₹</sup>1099</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiX2-qah5O_ot_u3hvZ5pHiPhBzmyvVCwEDdycyRDCtFiGhtY-XZ7pvBnaXiWeoh4ebhnGayxn773lvPcokpDxBeVJuWoM8omm-HziGxzGP0ZfMZKgDOW5tDMoJl_vI1InQcrCFKbXjjjyR9YayjYA5Q9vL-nSOdqJ6G7bv3MR0hpkCiqPtvv4bNlLxSxg/s1600/image31.jpg" alt=""/>
+                <h2 class="product-title">Noise Arc</h2>
+                <span class="price"><sup>₹</sup>1099</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGZzaVWBnjkpzYVlKE3GByiwhXA_mK94wUN7uhTxaNT7tIBW7gxDmMc19hpweVY9P-mcZEDCHW-b7naPfXFaZgqgVFeQ8QyR3ODKWB5cvgqNHCyG5YYp2oi2M4r10UmRHHY5G-ZxuedjbxI-xoU-v-9G1JlxB5R6XhVgDYn4X_lBLeVWKImJQMJzmQGOE/s1600/image32.jpg" alt=""/>
+                <h2 class="product-title">fire-Boltt</h2>
+                <span class="price"><sup>₹</sup>1799</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSBxhhqqaxEW3givw-rqVYoIC0RfY_WIY3IJ5EoTkWci_jKo9wveUOVBPzr0XIq_k3bbX4k4Gp6VDmDSbL2d2-p18-50XXGUjFR0Hc_dtJfCVxTMwJo4PljeJrpHHNRjgT1rLJIEYPrCZYQSc3vA_BD4sVsZ5TFVKfeu-o3jn7Shu_4aY1oqYN7X-Vlnc/s320/image47.jpg" alt=""/>
+                <h2 class="product-title">fire-boltt jewel</h2>
+                <span class="price"><sup>₹</sup>2999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhujXgytw4UMGSquFlEA7YSooGPlH_AdSzke-pewR5n5IKKb_kCI9SoP-zDxoZdCYIWx6RKQbhRyMVS3Cml2Ud8nVinADqZ2B_Azh2VDYfBiOU5YUM2cgrtG8DnIwIB9Edt9CbjNXY-vUb_5dcBY-DpRDcVS-48CB2TQapPLiQZUT_t0kHuqDJrYpDCGJQ/s320/image46.jpg" alt=""/>
+                <h2 class="product-title">Noise Sporty SmartWatch</h2>
+                <span class="price"><sup>₹</sup>1499</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcLiM1s6txIW7suDGVhFhVweaKGz5vlZXu0MtDpgwyHmvaTeOx2g-1jKkEbgH_or3jsOi8Km4hXp_9QMwdGGvWA_cInElj-ypbB6H4fAKarh2LoRvfXhW07ITuOv8r6_PrbI9CN8tR-fYTQLYhH32w9gHG22ckNTehFIzREofCQnwLkVbdS3gOFORxWm0/s320/image38.jpg" alt=""/>
+                <h2 class="product-title">Boat Nirvana Ion</h2>
+                <span class="price"><sup>₹</sup>1799</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6F5QdEv6FfjmiANRvtcA7UzUob6pSmwJJVcVW4aP8DYqeXXT8wt75VKqVSzA44goLW36q59JPpTfxbASGAhdJEuC50TYdr8T_jQkA3PclDGg_fVTyoa1li06FlvYdRJ6UcURRJ74U-sS9voCgirrreo1Lrka1DiZ_VO1BTvsEvR32cGysCrvhfv3Nv2c/s320/image19.jpg" alt=""/>
+                <h2 class="product-title">Boat Airdopes Atom 81 (Black)</h2>
+                <span class="price"><sup>₹</sup>1099</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjic8JKPHYc4mys7G6hfbE_S2hauSMb4tjvKtupOdpgqoHbOBhP9wtL35U8f7Lh7wXtkAJ36399SKjOjBfkLXf-bdZTeJZpkAr1BFazxUyocOaHN8F-DXoZJvct1Kke4u07MoxKUm5WcWUiEqJ4NZirs-v1VNrP1n4iYYZeTLPfDW-G6P1zQX8e8NygBRw/s320/image20.jpg" alt=""/>
+                <h2 class="product-title">Boat Airdopes 141</h2>
+                <span class="price"><sup>₹</sup>1299</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim74OeI-KHFJalNkn69_pONDwo9cnmpYpAv5PGkKxm3Mjboedjf-0BrQ5nMiambEbjHC57c-0C5phIjVq6GgtT4MhBsM9JV0IKBeVRY_W4DOytCuBeQMezrPBd9gbIbav1QzBlR5e3aQREWvlV-Hhz3KeiYn0Y2oktI4KaOiQ2uZIFY8gq5Fur3TgifZU/s320/image21.jpg" alt=""/>
+                <h2 class="product-title">Boat Airdopes Atom 81 (White)</h2>
+                <span class="price"><sup>₹</sup>1299</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7vzILmtGPTaNPzRMNt_9Btz4RRQhrGvW46M-pAz6sOAwpg2wEx19iB4fk-x9dPu21l2zNsivYhixI0AE9WgsJFqmRZlSCdv1ypNqa4s69xuwzOABetneTbrnzc1OV9-JCSltoF4bakbr01Wa9mT3g1StOtaQPzeS_XxSg7Clzy8h1BvDJb_ZryOU8zBw/s1600/image22.jpg" alt=""/>
+                <h2 class="product-title">Boat Airdopes 141 TWS</h2>
+                <span class="price"><sup>₹</sup>1299</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT5kNgw9AgLQzZb8mu-FwVLc0v24c7qkSBrKPg_u6l0cws3uaSJiHvVNdq_9EIiHzrkX8jyMNezGvT52bZW179jT3F_CFvBC7GbZ4RgvA8KXPVZ8h8ukkQsov5vdRojZBLTmtomdzMge4Ka_xa_GcEJVRzbk_2-MQhoPTD2JAuxztWN1isqG6yd7rdzWY/s320/image23.jpg" alt=""/>
+                <h2 class="product-title">Boat Airdopes 170<h2>
+                <span class="price"><sup>₹</sup>1499</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuXBkV8YRjlgnL13EqB7PZgfCzTYjs51MJeP6aU4rmTVMALp9Vt55ww3_OAy3uhpsWIRNZjaehfSovyLWKjtda_mB7psWCiEzIt_77WKGn7P2ZuL4WlAe5_P8f1Fq4i4sQhcEobVnzMR5LP58sYhuTZaxFtVTy3umz_211o2brfLBkFJm0yBqNugwbBOg/s320/image24.jpg" alt=""/>
+                <h2 class="product-title">Boat Airdopes Atom B1</h2>
+                <span class="price"><sup>₹</sup>1099</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj-UMr50a8_4VoQL4fHxPk3qRV5nlD_32fAs11f7r9Y1WWj_BGPEMoa_RsG4v4F1a5QGnTohgLgvfngjX4V-soj1fjqsFpOzWAvqGR6gX8HCq8WJ4FWfI9glvyU0WI2VCugIB_tTR2XE1iXj7zJlMNze407DQGQ8vnyqRmbE3y8LK59KlEaq6sqVOmNyI/s320/image25.jpg" alt=""/>
+                <h2 class="product-title">Boat Rockerz 450</h2>
+                <span class="price"><sup>₹</sup>1699</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyEimx7s0xwORUPJtybMad57ECHiIXRoN8LRg2gDrQVsBq4h5rKp3I1lIOUcm6eUsloI3CJj49as9yDt1cGcJWUper8Klipo4TWgCJy0YtXZHhWsAu89L8nXX2EqN1n5PMmXRIXjlQszUKy1oC5xo-U4AtJpzOIOe0mnxahUXcBTszcN2McnB0-JPSYLI/s320/image26.jpg" alt=""/>
+                <h2 class="product-title">Boult Audio Z40</h2>
+                <span class="price"><sup>₹</sup>999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN2VJRjOdJfhG6MzY2MQWUOOd4w4zE__ZYdY19kUgQKAEO2T2SnkQXC7o-ZxswJSj3VetNFPOfbV_IooN3H9HucKIzYwNq8b36Exsj6g5tbBCYNG2EWRMQpQYQ3Qk1q9e3rmGW3tpZoMF0KW8vH2mly73SQCjBYCQsi0T2xfTVKrCpTDQs7nBRHjpCDiY/s1600/image27.jpg" alt=""/>
+                <h2 class="product-title">Boat Airdopes 141 ANC</h2>
+                <span class="price"><sup>₹</sup>1699</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh51RxYr5mhaK_Es8Yzc8e0_CKw0V4nIzfEGWI8lwoZqhKhNNynkLFpdxXH8EVbDZJpEj881GqDheCc6f-fGM2Y7kU0FdDHxNHWyRuZ1hFLEiatcYqxYKIA8oU9ND8ft_anV0mmJNclrhKWe8nhRoru2Y3FiLsnTqxOGp-27B-Xhc6Y8CKglnX9H_Fkllg/s1600/image33.jpg" alt=""/>
+                <h2 class="product-title">Redgear Cosmo 7</h2>
+                <span class="price"><sup>₹</sup>1999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinHq6V_cvvMHr5XeQ87ppD9Bo1CEtriJG0EPMn7zzszP8DDzrMlgVkOFm-KkJwawPJod_cvSGK6IE_jX877vOSQ1Di5ewkPfXnlF-7oMKBSAYz4LQ59Z5nCqagXI04cY0qmpqxjbw8bYaAKnO6uUOUVB-RFIQJuh0EFKpbbigUqIHUhZdPVBeOCv2Dcrc/s320/image49.jpg" alt=""/>
+                <h2 class="product-title">Boat Rockerz 250</h2>
+                <span class="price"><sup>₹</sup>1999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihDOgaIR0eACxLLHLn-UAmHULRrlHj1h4b2W5FYPufOfnQYOaynZVwAVNQSPdECBU6prkYsuFAkKkCj1E8YxR8r9FTdDdrVyE6JMA3yzO-CgcyvPhVm7IwiGIqTSEStXxWvUbGSBXXZlAk7G36OiQ8T_NBaEZxOMh32j4RzUNzyJAcduE6NwDw5JgAkNY/s1600/image36.jpg" alt=""/>
+                <h2 class="product-title">GoPro HERO11</h2>
+                <span class="price"><sup>₹</sup>34999</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiuDc11b7tS97Le9kW-0IFO45tXlOqc-FACJBYtJhWF5MwS0CWgubP9PQQsiJhoA2B9Age7JL1ZoW60Qu4hp23wwKBrgH2aZfltKP8-Q_PCmH308csANV1d_2csz7xjP8G2CSn3filSXE42odmzbWik1CDqv3y1_FzEDOoPIurGE38sR18VLhKPeUPA90/s1600/image37.jpg" alt=""/>
+                <h2 class="product-title">Canon EOS 200D</h2>
+                <span class="price"><sup>₹</sup>59490</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPtiOUlPHhu4TRC589GlrgPRK-mxKfedpqFm21tOLp2QxDnutKR9WCNEOtWlx_sdjcwROFTYSq0GN59cBNrnUcCg_7lnMeiYbOvIjmAg5iXH88MKPxBlor9ovVOsMsq2L117XZlsWdzmDQOUsP_jttJ-hhpOeevjykMbbDbYLe__X1uNYwBbXphY-GIJI/s320/gg.jpg" alt=""/>
+                <h2 class="product-title">KODAK PIXPRO</h2>
+                <span class="price"><sup>₹</sup>13496</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div><!-- Box  -->
+            <div class="product-box">
+                <img class="product-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJAJtOG8tGPu9Fty7gGBxQFCrkwGr0EZ5F7i0-kGlMtHAwISs_-ErnZhUjK77ZKYmKNSgeWox144O85QOThdBMeKXqv_-EAtNyllHccJEQxWZ_0MQ3BLxyCq_xvOk4BxOjQzfGIsON9EB8bLpa_IiDYY3A4dJFep1-9vvEvIVfewqtMchGUtte8AIx7O0/s1600/image35.jpg" alt=""/>
+                <h2 class="product-title">Insta360 X3 GoPro</h2>
+                <span class="price"><sup>₹</sup>46990</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
